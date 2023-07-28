@@ -1,0 +1,16 @@
+.titulo, .negrito {
+  font-weight: bold;
+}
+
+div {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#content p {
+  font-size: 14px;
+}
+
+#content .titulo {
+  text-align: center;
+  font-size: 18px;
+}
