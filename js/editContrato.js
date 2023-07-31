@@ -26,10 +26,13 @@ const representanteAssinatura = document.querySelector('#representante-assinatur
 
 btnPdf.addEventListener("click", () => {
 
-  document.querySelector('#nome-fantasia').textContent = nomeFantasia.value
+  document.querySelector('#nome-fantasia').textContent = nomeFantasia.value.toUpperCase()
   document.querySelector('#empresa-contratante').textContent = empresaContratante.value
   document.querySelector('#cnpj').textContent = cnpj.value
-  document.querySelector('#inscricao-estadual').textContent = inscricaoEstadual.value
+  
+  if(inscricaoEstadual.value != '')
+    document.querySelector('#inscricao-estadual').textContent = "e inscrição estadual " + inscricaoEstadual.value
+
   document.querySelector('#rua').textContent = rua.value
   document.querySelector('#numero-rua').textContent = numeroRua.value
   document.querySelector('#bairro').textContent = bairro.value
