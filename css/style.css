@@ -1,5 +1,4 @@
 body, html {
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,8 +10,16 @@ body, html {
   align-items: center;
 }
 
-#content {
+#main-content {
   display: none;
+}
+
+#content p {
+  text-align: justify;
+}
+
+#content {
+  display: block;
   max-width: 190mm;
 }
 
@@ -40,4 +47,20 @@ div {
   width: 100%;
   padding: 5px;
   margin: 5px;
+}
+
+.assinatura {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.campos-assinatura {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.campos-assinatura span {
+  padding-top: 20px;
 }
