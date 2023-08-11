@@ -1,0 +1,85 @@
+#sigesis-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sigesis-campos label {
+  width: 25%;
+  word-break: break-word;
+}
+
+button#sigesis-generate-pdf {
+  margin-top: 10px;
+  color: #000;
+  border-color: #000;
+}
+
+button#sigesis-generate-pdf:hover {
+  background-color: rgb(136, 136, 136);
+  color: #fff;
+}
+
+.sigesis-titulo {
+  display: flex;
+  justify-content: center
+}
+
+.sigesis-page-break {
+  page-break-before: always;
+}
+
+.sigesis-campos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 5px;
+  padding: 0% 20%;
+  align-items: center;
+}
+
+.sigesis-campos input {
+  border: 1px solid #000;
+}
+
+.sigesis-assinatura {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.sigesis-campos-assinatura {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sigesis-campos-assinatura span {
+  padding-top: 20px;
+}
+
+#sigesis-radio-contrato {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#sigesis-radio-contrato div {
+  border: solid 1px #000;
+  display: flex;
+  margin: 5px;
+}
+
+#sigesis-radio-contrato label {
+  padding: 5px;
+}
+
+#sigesis-radio-contrato input[type=radio] {
+  display: none;
+}
+
+#sigesis-radio-contrato input[type="radio"]:checked + label{
+  background-color: rgb(136, 136, 136);
+  color: #fff;
+}

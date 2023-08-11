@@ -1,16 +1,28 @@
-.titulo, .negrito {
+.sigesis-titulo, .sigesis-negrito {
   font-weight: bold;
 }
 
-div {
+div#sigesis-content {
+  word-break: break-word;
+  max-width: 180mm;
+  display: block;
   font-family: 'Times New Roman', Times, serif;
 }
 
-#content p {
+#sigesis-content p {
+  text-align: justify;
   font-size: 14px;
 }
 
-#content .titulo {
+#sigesis-content .sigesis-titulo {
   text-align: center;
   font-size: 18px;
 }
+
+#sigesis-main-content {
+  display: none;
+}
+
+/* #sigesis-main-content {
+  display: none;
+} */

@@ -3,11 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/assinatura.css" />
-    <link rel="stylesheet" href="css/texto.css" />
     <!-- Script -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
@@ -15,98 +10,107 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="js/editContrato.js" defer></script>
-    <script src="js/script.js" defer></script>
   </head>
 
   <body>
     <div>
-      <div id="btn">
-        <div class="campos">
-          <label for="input-nome">Nome Fantasia: </label>
-          <input type="text" id="input-nome" name="nome" />
+      <div id="sigesis-btn">
+        <div class="sigesis-campos">
+          <label for="sigesis-input-nome">Nome Fantasia: </label>
+          <input type="text" id="sigesis-input-nome" name="nome" />
         </div>
 
-        <div class="campos">
-          <label for="input-cnpj">CNPJ:</label>
-          <input type="text" id="input-cnpj" name="cnpj" />
+        <div class="sigesis-campos">
+          <label for="sigesis-input-cnpj">CNPJ:</label>
+          <input type="text" id="sigesis-input-cnpj" name="cnpj" />
         </div>
 
-        <div class="campos">
-          <label for="input-IE">Inscrição estadual:</label>
-          <input type="text" id="input-IE" name="ie" />
+        <div class="sigesis-campos">
+          <label for="sigesis-input-IE">Inscrição estadual:</label>
+          <input type="text" id="sigesis-input-IE" name="ie" />
         </div>
 
-        <div class="campos">
-          <label for="input-rua">Rua:</label>
-          <input type="" id="input-rua" name="rua" />
+        <div class="sigesis-campos">
+          <label for="sigesis-input-rua">Rua:</label>
+          <input type="text" id="sigesis-input-rua" name="rua" />
         </div>
 
-        <div class="campos">
-          <label for="input-numero-rua">Numero:</label>
-          <input type="text" id="input-numero-rua" name="numero" />
+        <div class="sigesis-campos">
+          <label for="sigesis-input-numero-rua">Numero:</label>
+          <input type="text" id="sigesis-input-numero-rua" name="numero" />
         </div>
 
-        <div class="campos">
-          <label for="input-bairro">Bairro:</label>
-          <input type="text" id="input-bairro" name="bairro" />
+        <div class="sigesis-campos">
+          <label for="sigesis-input-bairro">Bairro:</label>
+          <input type="text" id="sigesis-input-bairro" name="bairro" />
         </div>
 
-        <div class="campos">
-          <label for="input-cidade">Cidade:</label>
-          <input type="text" id="input-cidade" name="cidade" />
+        <div class="sigesis-campos">
+          <label for="sigesis-input-cidade">Cidade:</label>
+          <input type="text" id="sigesis-input-cidade" name="cidade" />
         </div>
 
-        <div class="campos">
-          <label for="input-cep">CEP:</label>
-          <input type="text" id="input-cep" name="cep" />
+        <div class="sigesis-campos">
+          <label for="sigesis-input-cep">CEP:</label>
+          <input type="text" id="sigesis-input-cep" name="cep" />
         </div>
 
-        <div class="campos">
-          <label for="input-representante">Representante da empresa:</label>
-          <input type="text" id="input-representante" name="representante" />
+        <div class="sigesis-campos">
+          <label for="sigesis-input-representante"
+            >Representante da empresa:</label
+          >
+          <input
+            type="text"
+            id="sigesis-input-representante"
+            name="representante"
+          />
         </div>
 
-        <div class="campos">
-          <label for="input-cidadania">cidadania:</label>
-          <input type="text" id="input-cidadania" name="cidadania" />
+        <div class="sigesis-campos">
+          <label for="sigesis-input-cidadania">cidadania:</label>
+          <input type="text" id="sigesis-input-cidadania" name="cidadania" />
         </div>
 
-        <div class="campos">
-          <label for="input-civil">Estado civíl:</label>
-          <input type="text" id="input-civil" name="civil" />
+        <div class="sigesis-campos">
+          <label for="sigesis-input-civil">Estado civíl:</label>
+          <input type="text" id="sigesis-input-civil" name="civil" />
         </div>
 
-        <div class="campos">
-          <label for="input-profissao">Profissão:</label>
-          <input type="text" id="input-profissao" name="profissao" />
+        <div class="sigesis-campos">
+          <label for="sigesis-input-profissao">Profissão:</label>
+          <input type="text" id="sigesis-input-profissao" name="profissao" />
         </div>
 
-        <div class="campos">
-          <label for="input-cpf">CPF:</label>
-          <input type="text" id="input-cpf" name="cpf" />
+        <div class="sigesis-campos">
+          <label for="sigesis-input-cpf">CPF:</label>
+          <input type="text" id="sigesis-input-cpf" name="cpf" />
         </div>
 
-        <div class="campos">
-          <label for="input-rg">RG:</label>
-          <input type="text" id="input-rg" name="rg" />
+        <div class="sigesis-campos">
+          <label for="sigesis-input-rg">RG:</label>
+          <input type="text" id="sigesis-input-rg" name="rg" />
         </div>
 
-        <button id="generate-pdf">Download</button>
+        <div id="sigesis-radio-contrato"></div>
+
+        <button id="sigesis-generate-pdf">Gerar Contrato</button>
       </div>
-      <div id="main-content">
-        <div id="content">
+
+      <div id="sigesis-main-content">
+        <div id="contrato-n1">
           <div>
-            <p class="titulo">
+            <p class="sigesis-titulo">
               CONTRATO SISTEMA ERP – MÓDULO GESTÃO E EMISSÃO FISCAL NFC-e E NF-e
             </p>
-            <p id="nome-fantasia" class="titulo">//NOME FANTASIA//</p>
-            <div id="pagina-1">
-              <p class="titulo">1 – PARTES</p>
+            <p class="sigesis-titulo sigesis-nome-fantasia">
+              //NOME FANTASIA//
+            </p>
+            <div id="sigesis-pagina-1">
+              <p class="sigesis-titulo">1 – PARTES</p>
               <p>
                 1.1. O presente “CONTRATO DE PRESTAÇÃO DE SERVIÇOS” é um acordo
                 legal celebrado entre
-                <span class="telecom negrito"
+                <span class="sigesis-telecom negrito"
                   >Telecom Solutions Comunicação e Informática LTDA ME</span
                 >, empresa jurídica de direito privado, inscrita no CNPJ sob o
                 número 21.217.644/0001-06, inscrição estadual 002447873.00-91,
@@ -115,28 +119,38 @@
                 Souza, brasileiro, casado, empresário, inscrito no CPF sob o nº
                 982.022.606-63 e identidade civil nº M-7512813 SSP MG, doravante
                 denominada “CONTRATADA” e “CONTRATANTE”,
-                <span id="empresa-contratante" class="negrito">XXXXXXXXXX</span>
+                <span class="sigesis-negrito sigesis-empresa-contratante"
+                  >XXXXXXXXXX</span
+                >
                 empresa jurídica de direito privado, inscrita no CNPJ sob o
                 número
-                <span id="cnpj" class="negrito">XXXXXXXXXXXXX</span>
-                <span id="inscricao-estadual" class="negrito"></span>
+                <span class="sigesis-negrito sigesis-cnpj">XXXXXXXXXXXXX</span>
+                <span class="sigesis-inscricao-estadual"></span>
                 , com sede na rua
-                <span id="rua" class="negrito">XXXXXXXXXX</span>, nº
-                <span id="numero-rua" class="negrito">XXX</span>, Bairro
-                <span id="bairro" class="negrito">XXXXXXXX</span>, em
-                <span id="cidade" class="negrito">Ipatinga-MG</span>, CEP:
-                <span id="cep" class="negrito">XXXXXXXX</span>, representado por
-                <span id="representante" class="negrito representante-class"
+                <span class="sigesis-negrito sigesis-rua">XXXXXXXXXX</span>, nº
+                <span class="sigesis-negrito sigesis-numero-rua">XXX</span>,
+                Bairro
+                <span class="sigesis-negrito sigesis-bairro">XXXXXXXX</span>, em
+                <span class="sigesis-negrito sigesis-cidade">Ipatinga-MG</span>,
+                CEP: <span class="sigesis-negrito sigesis-cep">XXXXXXXX</span>,
+                representado por
+                <span
+                  class="sigesis-representante sigesis-negrito representante-class"
                   >XXXXXXXXXXXXX</span
-                >, <span id="cidadania" class="negrito">brasileiro</span>,
-                <span id="estado-civil" class="negrito">casado</span>,
-                <span id="profissao" class="negrito">empresário</span>, inscrito
-                no CPF sob o nº
-                <span id="cpf" class="negrito">XXXXXXXXXX</span> e identidade
-                civil n.º
-                <span id="rg" class="negrito">MG-XXXXXXXX SSP/MG</span>.
+                >,
+                <span class="sigesis-cidadania sigesis-negrito">brasileiro</span
+                >,
+                <span class="sigesis-estado-civil sigesis-negrito">casado</span
+                >,
+                <span class="sigesis-profissao sigesis-negrito">empresário</span
+                >, inscrito no CPF sob o nº
+                <span class="sigesis-cpf sigesis-negrito">XXXXXXXXXX</span>
+                e identidade civil n.º
+                <span class="sigesis-rg sigesis-negrito"
+                  >MG-XXXXXXXX SSP/MG</span
+                >.
               </p>
-              <p class="titulo">2 – DO OBJETO</p>
+              <p class="sigesis-titulo">2 – DO OBJETO</p>
               <p>
                 2.1. O presente “CONTRATO DE ASSINATURA E TERMOS DE USO” é um
                 acordo legal celebrado entre a CONTRATADA, detentora dos
@@ -162,7 +176,7 @@
                 objetivos de forma única, visando à implantação que realmente
                 lhe possibilitem atingir resultados satisfatórios, cuja
                 aquisição
-                <span class="negrito">
+                <span class="sigesis-negrito">
                   do Sistema ERP – MÓDULO GESTÃO E EMISSÃO FISCAL NFC-e E NF-e
                   integrado com: Nova venda; Vendas do dia; Vendas em Aberto;
                   Caixa (abrir um caixa, caixas do dia, caixas em aberto e
@@ -231,23 +245,25 @@
                 realização de novo treinamento, haverá a cobrança avulsa pelo
                 preço de mercado por hora.
               </p>
-              <p class="titulo">3 – DO PRAZO</p>
+              <p class="sigesis-titulo">3 – DO PRAZO</p>
               <p>
                 3.1.
-                <span class="negrito"
+                <span class="sigesis-negrito"
                   >O presente instrumento é celebrado pelo prazo de 12 (doze)
                   meses, a partir da assinatura</span
                 >, prorrogando-se, automaticamente, pelo mesmo prazo, salvo se
                 denunciado por escrito e com antecedência mínima de 60
                 (sessenta) dias da data do vencimento, por qualquer das partes.
               </p>
-              <p class="titulo">4 – DOS VALORES E FORMAS DE PAGAMENTO</p>
+              <p class="sigesis-titulo">
+                4 – DOS VALORES E FORMAS DE PAGAMENTO
+              </p>
               <p>
                 4.1. A CONTRATANTE pagará o valor de R$100,00 (cem reais), a
                 título de taxa de adesão/habilitação, que deverá ser pago em
                 parcela única em espécie, transferência bancária ou via PIX,
                 além da
-                <span class="negrito"
+                <span class="sigesis-negrito"
                   >mensalidade para utilização do sistema “SIGESIS” no valor de
                   R$159,00 (cento e cinquenta e nove reais).</span
                 >
@@ -256,7 +272,9 @@
                 4.2. O pagamento pela utilização do serviço será realizado
                 mensalmente, dando à CONTRATANTE acesso ao sistema “SIGESIS”
                 pelo período de 30 (trinta) dias consecutivos,
-                <span class="negrito">com vencimento para todo dia 10.</span>
+                <span class="sigesis-negrito"
+                  >com vencimento para todo dia 10.</span
+                >
               </p>
               <p>
                 4.2.1. O reajuste da mensalidade terá como data base o mês de
@@ -278,11 +296,11 @@
               </p>
               <p>
                 4.3.1. Decorridos 30 (trinta) dias e caso o débito não seja
-                quitado a <span class="negrito">CONTRATANTE</span> estará
-                sujeita ao registro nos sistemas de proteção de crédito
-                conveniados.
+                quitado a
+                <span class="sigesis-negrito">CONTRATANTE</span> estará sujeita
+                ao registro nos sistemas de proteção de crédito conveniados.
               </p>
-              <p class="titulo">5 – DA RESCISÃO</p>
+              <p class="sigesis-titulo">5 – DA RESCISÃO</p>
               <p>
                 5.1. O presente contrato poderá ser rescindido nas seguintes
                 condições:
@@ -314,7 +332,7 @@
                 mediante aviso prévio por escrito de no mínimo 60 (sessenta)
                 dias, sob pena de aplicação da multa estipulada no item 5.1.1;
               </p>
-              <p class="titulo">6 – DAS OBRIGAÇÕES DA CONTRATANTE</p>
+              <p class="sigesis-titulo">6 – DAS OBRIGAÇÕES DA CONTRATANTE</p>
               <p>
                 6.1. A CONTRATANTE obriga-se a utilizar o sistema “SIGESIS” de
                 boa-fé e sem a intenção de praticar atos ilícitos ou causar
@@ -439,7 +457,7 @@
                 disponível do sistema “SIGESIS” instalado em seu dispositivo de
                 acesso.
               </p>
-              <p class="titulo">7 – DAS OBRIGAÇÕES DA CONTRATADA</p>
+              <p class="sigesis-titulo">7 – DAS OBRIGAÇÕES DA CONTRATADA</p>
               <p>
                 7.1. A CONTRATADA obriga-se a manter permanentemente a segurança
                 e sigilo dos documentos e informações armazenadas no sistema
@@ -483,8 +501,8 @@
                 qualquer obrigação por eventuais danos causados à CONTRATANTE.
               </p>
             </div>
-            <div id="titulo-8">
-              <p class="titulo">
+            <div id="sigesis-titulo-8">
+              <p class="sigesis-titulo">
                 8 – DA ISENÇÃO DE RESPONSABILIDADE DA CONTRATADA
               </p>
               <p>
@@ -526,7 +544,7 @@
                 CONTRATANTE, sem a devida conferência, não serão de
                 responsabilidade da CONTRATADA.
               </p>
-              <p class="titulo">9 –PROPRIEDADE INTELECTUAL</p>
+              <p class="sigesis-titulo">9 –PROPRIEDADE INTELECTUAL</p>
               <p>
                 9.1. O conteúdo disponível no sistema da CONTRATADA é de
                 propriedade exclusiva desta. A CONTRATANTE não adquire direito à
@@ -545,7 +563,7 @@
                 9.3. Em nenhuma hipótese a CONTRATANTE terá acesso aos dados de
                 terceiros armazenados nos servidores da CONTRATADA.
               </p>
-              <p class="titulo">10 – DAS CONDIÇÕES GERAIS</p>
+              <p class="sigesis-titulo">10 – DAS CONDIÇÕES GERAIS</p>
               <p>
                 10.1. O acesso às funcionalidades do sistema “SIGESIS” será
                 interrompido quando a assinatura for encerrada ou cancelada, por
@@ -623,27 +641,603 @@
                 vias de igual teor, forma e efeitos, substituindo quaisquer
                 acordos anteriores, naquilo em que os alterar, completar ou
                 suprimir, perante 02 (duas) testemunhas. Ipatinga,
-                <span id="data" class="negrito">XX/XX/20XX</span>.
+                <span class="sigesis-negrito sigesis-data">XX/XX/20XX</span>.
               </p>
             </div>
-            <div class="assinatura">
-              <div class="campos-assinatura">
+            <div class="sigesis-assinatura">
+              <div class="sigesis-campos-assinatura">
                 <span>___________________________________</span>
                 <span>ROSEMAR S. SOUZA</span>
                 <span>___________________________________</span>
-                <span class="negrito">1º Testemunha</span>
+                <span class="sigesis-negrito">1º Testemunha</span>
                 <span>___________________________________</span>
                 <span>Nome:</span>
                 <span>___________________________________</span>
                 <span>CPF:</span>
               </div>
-              <div class="campos-assinatura">
+              <div class="sigesis-campos-assinatura">
                 <span>___________________________________</span>
-                <span id="representante-assinatura" class="representante-class"
+                <span
+                  class="sigesis-representante-class sigesis-representante-assinatura"
                   >XXXXXXXXXXXXXXX</span
                 >
                 <span>___________________________________</span>
-                <span class="negrito">2º Testemunha</span>
+                <span class="sigesis-negrito">2º Testemunha</span>
+                <span>___________________________________</span>
+                <span>Nome:</span>
+                <span>___________________________________</span>
+                <span>CPF:</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="contrato-e1">
+          <div>
+            <p class="sigesis-titulo">
+              CONTRATO SISTEMA ERP – MÓDULO GESTÃO E EMISSÃO FISCAL NFC-e E NF-e
+            </p>
+            <p class="sigesis-titulo sigesis-nome-fantasia">
+              //NOME FANTASIA//
+            </p>
+            <div id="sigesis-pagina-1">
+              <p class="sigesis-titulo">1 – PARTES</p>
+              <p>
+                1.1. O presente “CONTRATO DE PRESTAÇÃO DE SERVIÇOS” é um acordo
+                legal celebrado entre
+                <span class="sigesis-telecom negrito"
+                  >Telecom Solutions Comunicação e Informática LTDA ME</span
+                >, empresa jurídica de direito privado, inscrita no CNPJ sob o
+                número 21.217.644/0001-06, inscrição estadual 002447873.00-91,
+                com sede à Avenida Olegário Maciel, Nº. 453 bairro Centro, em
+                Caratinga/MG, CEP: 35.300-365, representada por Rosemar da Silva
+                Souza, brasileiro, casado, empresário, inscrito no CPF sob o nº
+                982.022.606-63 e identidade civil nº M-7512813 SSP MG, doravante
+                denominada “CONTRATADA” e “CONTRATANTE”,
+                <span class="sigesis-negrito sigesis-empresa-contratante"
+                  >XXXXXXXXXX</span
+                >
+                empresa jurídica de direito privado, inscrita no CNPJ sob o
+                número
+                <span class="sigesis-negrito sigesis-cnpj">XXXXXXXXXXXXX</span>
+                <span class="sigesis-negrito sigesis-inscricao-estadual"></span>
+                , com sede na rua
+                <span class="sigesis-negrito sigesis-rua">XXXXXXXXXX</span>, nº
+                <span class="sigesis-negrito sigesis-numero-rua">XXX</span>,
+                Bairro
+                <span class="sigesis-negrito sigesis-bairro">XXXXXXXX</span>, em
+                <span class="sigesis-negrito sigesis-cidade">Ipatinga-MG</span>,
+                CEP: <span class="sigesis-negrito sigesis-cep">XXXXXXXX</span>,
+                representado por
+                <span
+                  class="sigesis-representante sigesis-negrito representante-class"
+                  >XXXXXXXXXXXXX</span
+                >,
+                <span class="sigesis-cidadania sigesis-negrito">brasileiro</span
+                >,
+                <span class="sigesis-estado-civil sigesis-negrito">casado</span
+                >,
+                <span class="sigesis-profissao sigesis-negrito">empresário</span
+                >, inscrito no CPF sob o nº
+                <span class="sigesis-cpf sigesis-negrito">XXXXXXXXXX</span>
+                e identidade civil n.º
+                <span class="sigesis-rg sigesis-negrito"
+                  >MG-XXXXXXXX SSP/MG</span
+                >.
+              </p>
+              <p class="sigesis-titulo">2 – DO OBJETO</p>
+              <p>
+                2.1. O presente “CONTRATO DE ASSINATURA E TERMOS DE USO” é um
+                acordo legal celebrado entre a CONTRATADA, detentora dos
+                direitos e licenças do SIGESIS - Sistemas de Gestão e a
+                CONTRATANTE acima qualificada.
+              </p>
+              <p>
+                2.1.1. A CONTRATANTE declara desde já ter lido o presente
+                contrato na sua integralidade, concordando com todas as
+                cláusulas e disposições transcritas abaixo, nas quais declara a
+                autenticidade e veracidade.
+              </p>
+              <p>
+                2.1.2. O presente instrumento regerá a relação jurídica
+                estabelecida entre a CONTRATADA e a CONTRATANTE, para fins de
+                utilização do sistema “SIGESIS”, disponibilizado pela CONTRATADA
+                através do site “https://sigesis.com.br/”.
+              </p>
+              <p>
+                2.1.3. A plataforma oferecida pela CONTRATADA ao CONTRATANTE é
+                denominada “SIGESIS”, e tem por finalidade soluções
+                personalizada para cada cliente, tratando suas necessidades e
+                objetivos de forma única, visando à implantação que realmente
+                lhe possibilitem atingir resultados satisfatórios, cuja
+                aquisição
+                <span class="sigesis-negrito">
+                  do Sistema ERP – MÓDULO GESTÃO E EMISSÃO FISCAL NFC-e E NF-e
+                  integrado com: Nova venda; Vendas do dia; Vendas em Aberto;
+                  Caixa (abrir um caixa, caixas do dia, caixas em aberto e
+                  retiradas do caixa); Controle de vendas (Vendas por período,
+                  Vendas consolidadas, Vendas consolidadas produtos, Vendas
+                  produto/fornecedor, Crediário do cliente). Adicionar cadastro;
+                  listar clientes; listar fornecedores; buscar cadastro.
+                  Adicionar produto; Grade de vendas; listar produto; Estoque de
+                  produtos; Produtos pendentes; buscar produto; Tabela de preços
+                  (Adicionar tabela de preços, listar tabela de preços);
+                  Atributos do produto (Adicionar atributo do produto, listar
+                  atributo do produto); Grupos (Adicionar grupo, listar grupo);
+                  Categorias (Adicionar categoria, listar categoria);
+                  Fabricantes (Adicionar fabricantes, listar fabricantes).
+                  Despesas (Adicionar despesa, Despesas pagas, Despesas a pagar,
+                  agrupar despesas, conciliar despesas); Receitas (Receita
+                  Rápida, adicionar receita, Contas recebidas, Contas a
+                  receber); Bancos (Bancos, Extrato, Cheques, Boletos, Arquivos
+                  de bancos); Nota Fiscal (Listar Nota Fiscal, Adicionar Nota
+                  Fiscal, Nota Fiscal de compra, Nota Fiscal de venda,
+                  inventario fiscal); Configurações (Centro de custo, Plano de
+                  contas, Tipo de pagamento); DRE (DRE Financeiro, DRE Metas).
+                  Listar Chave Acesso NF; NFC-e inutilizadas; NF-e inutilizadas;
+                  Arquivo Sintegra; Arquivo Sintegra inventário. Análise DRE
+                  Mensal; Financeiro (Análise Financeira Anual, Análise
+                  financeira Mensal, Análise de despesas, Análise de receitas,
+                  Análise de faturamento). Atualizações (Empresa); Origem;
+                  Usuários (Adicionar usuário, Usuários bloqueados, listar
+                  usuário). Recarregar Página, Acesso remoto, Manual, Falar no
+                  WhatsApp, Contato. Emissão de NFC-e e NF-e limitando a 300
+                  notas por mês e adicional R$0,15 por nota.</span
+                >
+              </p>
+              <p>
+                2.1.3.1. A CONTRATANTE declara a sua plena e irrevogável ciência
+                de que a plataforma objeto do presente contrato de utilização,
+                já se encontra pronto, finalizado e em funcionamento, não
+                cabendo, pois, fazer quaisquer solicitações de mudanças
+                estruturais da mesma.
+              </p>
+              <p>
+                2.1.3.2. A plataforma poderá passar por futuras atualizações e
+                modificações que ocorrerão por conta, responsabilidade e no
+                prazo que convier à CONTRATADA.
+              </p>
+              <p>
+                2.1.3.3. A CONTRATANTE poderá sugerir modificações para melhoria
+                da plataforma pelos canais de relacionamento, estando, desde já
+                ciente, que tais sugestões não serão obrigatórias e nem
+                importarão em direito à mesma, ficando, tais modificações,
+                exclusivamente a cargo da CONTRATADA a decisão sobre a
+                implementação das mesmas ou não, e, em caso de se decidir por
+                implementá-las, tais alterações serão realizadas gradualmente e
+                no prazo que lhe convier.
+              </p>
+              <p>
+                2.1.4. A CONTRATADA realizará o treinamento de utilização do
+                sistema à CONTRATANTE, conforme as regras abaixo.
+              </p>
+              <p>
+                2.1.4.1. O treinamento acima descrito será limitado a 04h
+                (quatro horas), que deverão ser concluídos em uma única etapa.
+              </p>
+              <p>
+                2.1.4.2. Havendo solicitação expressa da CONTRATANTE pela
+                realização de novo treinamento, haverá a cobrança avulsa pelo
+                preço de mercado por hora.
+              </p>
+              <p class="sigesis-titulo">3 – DO PRAZO</p>
+              <p>
+                3.1.
+                <span class="sigesis-negrito"
+                  >O presente instrumento é celebrado pelo prazo de 12 (doze)
+                  meses, a partir da assinatura</span
+                >, prorrogando-se, automaticamente, pelo mesmo prazo, salvo se
+                denunciado por escrito e com antecedência mínima de 60
+                (sessenta) dias da data do vencimento, por qualquer das partes.
+              </p>
+              <p class="sigesis-titulo">
+                4 – DOS VALORES E FORMAS DE PAGAMENTO
+              </p>
+              <p>
+                4.1. A CONTRATANTE pagará o valor de R$100,00 (cem reais), a
+                título de taxa de adesão/habilitação, que deverá ser pago em
+                parcela única em espécie, transferência bancária ou via PIX,
+                além da
+                <span class="sigesis-negrito"
+                  >mensalidade para utilização do sistema “SIGESIS” no valor de
+                  R$159,00 (cento e cinquenta e nove reais).</span
+                >
+              </p>
+              <p>
+                4.2. O pagamento pela utilização do serviço será realizado
+                mensalmente, dando à CONTRATANTE acesso ao sistema “SIGESIS”
+                pelo período de 30 (trinta) dias consecutivos,
+                <span class="sigesis-negrito"
+                  >com vencimento para todo dia 10.</span
+                >
+              </p>
+              <p>
+                4.2.1. O reajuste da mensalidade terá como data base o mês de
+                janeiro subsequente à assinatura do contrato e será proporcional
+                ao período de vigência deste, utilizando-se o índice IPCA/IBGE,
+                ou no caso de extinção deste índice, o indicador que vier a ser
+                adotado a fim de substituí-lo.
+              </p>
+
+              <p>
+                4.3. Ocorrendo impontualidade no cumprimento das obrigações
+                pecuniárias decorrentes deste contrato, sobre as quantias
+                devidas incidirão, desde a data do inadimplemento até a data do
+                efetivo pagamento, multa de mora 2% (dois por cento), mais juros
+                moratórios de 1% (um por cento) ao mês (pro rata) e honorários
+                advocatícios arbitrados judicialmente, se for o caso, mais
+                despesas de cobrança efetuadas e da correção monetária pelo
+                IPCA/IBGE ou outro que venha a substituí-lo.
+              </p>
+              <p>
+                4.3.1. Decorridos 30 (trinta) dias e caso o débito não seja
+                quitado a
+                <span class="sigesis-negrito">CONTRATANTE</span> estará sujeita
+                ao registro nos sistemas de proteção de crédito conveniados.
+              </p>
+              <p class="sigesis-titulo">5 – DA RESCISÃO</p>
+              <p>
+                5.1. O presente contrato poderá ser rescindido nas seguintes
+                condições:
+              </p>
+              <p>
+                5.1.1. Por rescisão unilateral e imotivada de quaisquer das
+                partes durante a vigência deste instrumento, prorrogado ou não,
+                incidirá multa contratual de 50% referente ao restante dos meses
+                para finalização do contrato.
+              </p>
+              <p>
+                5.1.2. A qualquer tempo, por qualquer das partes, por
+                descumprimento das obrigações contratadas, mediante pré-aviso,
+                através de AR (aviso de recebimento ou via e-mail), sem prejuízo
+                do disposto no item 5.1.1 desta cláusula;
+              </p>
+              <p>
+                5.1.3. Falência ou recuperação judicial, de qualquer uma das
+                partes;
+              </p>
+              <p>
+                5.1.4. Falta de pagamento por parte da CONTRATANTE à CONTRATADA
+                por um período superior a 60 dias, ressalvadas as medidas legais
+                cabíveis;
+              </p>
+              <p>5.1.5. Venda ou dissolução da empresa;</p>
+              <p>
+                5.1.6. Após a carência mínima de 12 (doze) meses (Cláusula 3.1),
+                mediante aviso prévio por escrito de no mínimo 60 (sessenta)
+                dias, sob pena de aplicação da multa estipulada no item 5.1.1;
+              </p>
+              <p class="sigesis-titulo">6 – DAS OBRIGAÇÕES DA CONTRATANTE</p>
+              <p>
+                6.1. A CONTRATANTE obriga-se a utilizar o sistema “SIGESIS” de
+                boa-fé e sem a intenção de praticar atos ilícitos ou causar
+                danos a terceiros. A CONTRATANTE compromete-se a não efetuar os
+                seguintes ilícitos, sem exclusão de outros:
+              </p>
+              <p>
+                a) não poderá acessar informações ou arquivos de terceiros
+                através do sistema “SIGESIS”;
+              </p>
+              <p>
+                b) não poderá enviar ou transmitir qualquer arquivo malicioso
+                que contenha vírus, worms, cavalos de Tróia ou qualquer outra
+                espécie de programação ou comando que possa contaminar, destruir
+                ou interferir no bom funcionamento do sistema contratado;
+              </p>
+              <p>
+                c) não poderá utilizar os serviços contratados para fins de
+                infração à legislação brasileira, para fins de causar danos a
+                terceiros ou para fins de armazenar documentos que estejam
+                relacionados a ilícitos cíveis ou penais.
+              </p>
+
+              <p>
+                6.2. A CONTRATANTE é responsável por todas as informações
+                enviadas aos servidores da CONTRATADA através do sistema
+                “SIGESIS”, responsabilizando-se por quaisquer violações legais a
+                direitos de terceiros decorrentes da operação do serviço segundo
+                o contrato. Referida obrigação engloba também as ações efetuadas
+                por intermédio de funcionários ou representantes da CONTRATANTE.
+              </p>
+              <p>
+                6.3. A CONTRATANTE declara ter ciência que o sistema “SIGESIS” é
+                operado através da rede mundial de computadores, sendo de sua
+                inteira responsabilidade o dispositivo pelo qual realiza o
+                acesso bem como sua conexão própria com a internet, englobando,
+                provedor de acesso, modem e demais intermediários envolvidos na
+                conexão particular da mesma. A CONTRATADA não possui qualquer
+                obrigação sobre os dispositivos e conexões particulares da
+                CONTRATANTE.
+              </p>
+              <p>
+                6.4. A CONTRATANTE assume a obrigação de manter em sigilo as
+                credenciais de acesso ao sistema (nome de usuário e senha),
+                assumindo a responsabilidade de não compartilhar com terceiros
+                as suas informações de acesso. Caso o acesso ao sistema
+                “SIGESIS” seja efetuado por terceiros estranhos à presente
+                relação contratual, a CONTRATADA deixa de ser responsável pela
+                guarda e segurança dos arquivos e informações enviadas e fica
+                isenta de qualquer responsabilidade relacionada à privacidade e
+                segurança das informações.
+              </p>
+              <p>
+                6.5. A CONTRATANTE não poderá compartilhar, dividir ou fornecer
+                a sua conta para utilização de terceiros, sob pena de
+                cancelamento da conta e rescisão do presente contrato, além da
+                eliminação das informações armazenadas.
+              </p>
+              <p>
+                6.6. A CONTRATANTE assume a obrigação de não acessar o sistema
+                através de conexão indireta aos servidores da CONTRATADA, não
+                podendo fazer uso de tecnologias de proxy ou virtual private
+                network (VPN) ou qualquer outra tecnologia que impeça o completo
+                conhecimento por parte da CONTRATADA do número de IP (Internet
+                Protocol) utilizado na conexão, ou que mostre número de IP
+                diferente do computador de origem do acesso, sob pena de
+                cancelamento do plano contratado por violação às regras de
+                segurança dos servidores.
+              </p>
+              <p>
+                6.7. A CONTRATANTE é responsável por realizar o acesso ao
+                sistema “SIGESIS” apenas em computadores seguros e privados, que
+                estejam livres de vírus e que sejam confiáveis do ponto de vista
+                de segurança dos dados inseridos, não havendo responsabilidade
+                por qualquer forma de indenização da CONTRATADA pelo acesso em
+                computadores públicos, como por exemplo, em “lanhouses”.
+              </p>
+              <p>
+                6.8. Em caso de venda, transferência ou alienação parcial do
+                controle societário da CONTRATADA, a CONTRATANTE autoriza desde
+                logo cessão de suas informações e arquivos armazenados nos
+                servidores a terceiros adquirentes da empresa.
+              </p>
+              <p>
+                6.9. A CONTRATANTE declara possuir capacidade jurídica para
+                contratação do sistema “SIGESIS” bem como declara ser
+                financeiramente responsável pelo pagamento da mensalidade pela
+                da pessoa física ou jurídica em nome da qual ocorre a
+                contratação.
+              </p>
+              <p>
+                6.10. A CONTRATANTE declara ter fornecido dados verdadeiros e
+                corretos no momento de preenchimento das suas informações
+                cadastrais no procedimento de contratação, responsabilizando-se
+                por eventuais erros de digitação ou por dados inseridos
+                erroneamente. A CONTRATANTE assume a obrigação de informar à
+                CONTRATADA imediatamente quaisquer alterações cadastrais,
+                sobretudo de mudança de endereço físico ou de correio
+                eletrônico, sendo facultado à CONTRATADA utilizar serviço
+                próprio ou de terceiros para apurar a validade e veracidade das
+                informações prestadas.
+              </p>
+              <p>
+                6.11. A CONTRATANTE é obrigada a comunicar à CONTRATADA,
+                eventual extravio ou alienação das informações de acesso à conta
+                (nome de usuário e senha), sendo que a CONTRATADA não se
+                responsabiliza pela segurança e privacidade das informações em
+                caso de uso ou compartilhamento negligente ou imprudente das
+                informações de acesso.
+              </p>
+              <p>
+                6.12. A CONTRATANTE declara que o e-mail informado é uma forma
+                de comunicação eficaz, válida e suficiente para recebimento de
+                comunicados relacionados à sua conta do sistema “SIGESIS”, bem
+                como para informações de cancelamento ou suspensão da conta.
+              </p>
+              <p>
+                6.13. A CONTRATANTE obriga-se a manter o sistema “SIGESIS”
+                sempre atualizado, realizando as atualizações sugeridas ou
+                enviadas pela CONTRATADA. A CONTRATADA não responderá por danos
+                causados à CONTRATANTE, quando não possuir a última atualização
+                disponível do sistema “SIGESIS” instalado em seu dispositivo de
+                acesso.
+              </p>
+              <p class="sigesis-titulo">7 – DAS OBRIGAÇÕES DA CONTRATADA</p>
+              <p>
+                7.1. A CONTRATADA obriga-se a manter permanentemente a segurança
+                e sigilo dos documentos e informações armazenadas no sistema
+                “SIGESIS”, não englobando eventuais cópias de arquivos salvos no
+                próprio computador ou quaisquer outros dispositivos através do
+                qual a CONTRATANTE acessa o sistema. Além disso, as informações
+                armazenadas nos servidores da CONTRATADA através do sistema
+                “SIGESIS” serão armazenados em local seguro e sigiloso, em
+                cumprimento às regras das Leis nº 12.965/2014 e 13.709/2018.
+              </p>
+              <p>
+                7.2. A CONTRATADA é responsável pelo bom funcionamento do
+                sistema “SIGESIS”, comprometendo-se a solucionar falhas
+                apresentadas através de atendimento direto ou através de
+                atualizações do sistema “SIGESIS”. A CONTRATANTE, por sua vez,
+                declara estar ciente que o sistema poderá apresentar falhas ou
+                incorreções, assumindo a obrigação de reportar eventuais
+                problemas à CONTRATADA.
+              </p>
+              <p>
+                7.3. A CONTRATADA oferecerá, à CONTRATANTE, assistência técnica
+                relacionada a falhas e defeitos do funcionamento do sistema
+                “SIGESIS”, mas não será responsável pela operação individual dos
+                dispositivos da CONTRATANTE. As chamadas abertas pela
+                CONTRATANTE a respeito de falhas técnicas do sistema serão
+                respondidas no prazo de 72 (setenta e duas) horas.
+              </p>
+              <p>
+                7.4. O horário de atendimento telefônico disponibilizado pela
+                CONTRATADA é de segunda a sexta das 9:15 às 11:45 e das 13:15 às
+                17:00. Qualquer chamada realizada fora dos dias e horários
+                informados não será atendida.
+              </p>
+              <p>
+                7.5. A CONTRATADA é legalmente obrigada a não fornecer quaisquer
+                informações privadas da CONTRATANTE a terceiros, podendo, no
+                entanto, utilizar referidas informações para fins de
+                estatística. A CONTRATADA somente compartilhará ou fornecerá
+                informações armazenadas em seus servidores em casos de ordens
+                advindas de autoridades judiciais, casos nos quais não assumirá
+                qualquer obrigação por eventuais danos causados à CONTRATANTE.
+              </p>
+            </div>
+            <div id="sigesis-titulo-8">
+              <p class="sigesis-titulo">
+                8 – DA ISENÇÃO DE RESPONSABILIDADE DA CONTRATADA
+              </p>
+              <p>
+                8.1. A CONTRATADA não é responsável por danos causados em razão
+                da ocorrência de “casos fortuitos” ou de “força maior”, conforme
+                previsto pelo artigo 393 do Código Civil Brasileiro. A
+                suspensão, ainda que parcial, do serviço de internet ou
+                telefonia na sede da CONTRATADA é considerado caso fortuito para
+                fins do presente contrato.
+              </p>
+              <p>
+                8.2. A CONTRATADA é isenta de qualquer responsabilidade por
+                danos causados através da utilização do sistema “SIGESIS” por
+                pessoas não autorizadas ou terceiros que não façam parte do
+                quadro de funcionários da CONTRATANTE ou, ainda, em casos de
+                violação a direitos nos quais não exista culpa subjetiva da
+                CONTRATADA.
+              </p>
+              <p>
+                8.3. A CONTRATADA não é responsável pelas informações pessoais
+                ou informações de conta fornecidas pela CONTRATANTE e não
+                responde pelo preenchimento dos dados cadastrais de maneira
+                falsa ou incorreta.
+              </p>
+              <p>
+                8.4. A CONTRATADA não poderá ser responsabilizada por pagamentos
+                errôneos realizados pela CONTRATANTE a fornecedores, clientes,
+                funcionários, agentes, ou qualquer outra pessoa. A CONTRATANTE
+                deverá conferir os valores apontados pelo sistema, sendo de sua
+                responsabilidade apurar os valores corretos para pagamento,
+                ainda que referido valor tenha sido indicado pelo sistema
+                “SIGESIS”. Referida cláusula engloba também o pagamento de
+                comissões.
+              </p>
+              <p>
+                8.5. A CONTRATANTE deverá promover verificações periódicas nos
+                cálculos e lançamentos informados pelo sistema para fins de
+                verificar a sua correção. Os pagamentos realizados pela
+                CONTRATANTE, sem a devida conferência, não serão de
+                responsabilidade da CONTRATADA.
+              </p>
+              <p class="sigesis-titulo">9 –PROPRIEDADE INTELECTUAL</p>
+              <p>
+                9.1. O conteúdo disponível no sistema da CONTRATADA é de
+                propriedade exclusiva desta. A CONTRATANTE não adquire direito à
+                utilização de imagens, sons, fotografias, documentos, textos ou
+                quaisquer outros elementos disponibilizados no sistema da
+                CONTRATADA, sendo totalmente vedada a sua reprodução.
+              </p>
+              <p>
+                9.2. A CONTRATANTE não possui qualquer direito de propriedade ou
+                domínio do software disponibilizado pela CONTRATADA bem como não
+                possui qualquer ingerência sobre os métodos de armazenamento e
+                compartilhamento dos arquivos e informações armazenadas nos
+                servidores desta.
+              </p>
+              <p>
+                9.3. Em nenhuma hipótese a CONTRATANTE terá acesso aos dados de
+                terceiros armazenados nos servidores da CONTRATADA.
+              </p>
+              <p class="sigesis-titulo">10 – DAS CONDIÇÕES GERAIS</p>
+              <p>
+                10.1. O acesso às funcionalidades do sistema “SIGESIS” será
+                interrompido quando a assinatura for encerrada ou cancelada, por
+                qualquer hipótese prevista no presente instrumento.
+              </p>
+              <p>
+                10.2. A CONTRATADA, no exercício do direito de cobrança, em caso
+                de mora, poderá valer-se dos serviços profissionais de advogados
+                ou empresas de cobranças especializadas de seus créditos,
+                incidindo sobre o saldo devedor, além dos encargos constantes
+                deste contrato de prestação de serviços, as despesas
+                administrativas de cobrança e os honorários advocatícios no
+                importe de 10% (dez por cento) sobre o valor do débito,
+                assegurando igualdade à CONTRATANTE, caso esta tenha que cobrar
+                qualquer quantia que lhe for devida pela CONTRATADA.
+              </p>
+              <p>
+                10.3 O não exercício de direito previsto no presente instrumento
+                por qualquer uma das partes não representará renúncia, transação
+                ou novação do direito exercido, mas mera liberalidade.
+              </p>
+              <p>
+                10.4. A CONTRATADA poderá oferecer descontos e condições
+                especiais, sem que isso configure direito adquirido da
+                CONTRATANTE, podendo eventuais condições ser revistas a qualquer
+                tempo.
+              </p>
+              <p>
+                10.5. A CONTRATADA suspenderá o acesso ao sistema em caso de
+                inadimplência pela CONTRATANTE, independente de aviso prévio.
+              </p>
+              <p>
+                10.6. Caso o Poder Judiciário venha a anular alguma das
+                cláusulas do presente acordo, referida anulabilidade ou nulidade
+                não prejudicará a eficácia e a validade das demais cláusulas do
+                contrato, permanecendo em vigor o presente acordo desde que seja
+                possível a manutenção do equilíbrio contratual entre as partes.
+              </p>
+              <p>
+                10.7. O presente contrato constitui título executivo
+                extrajudicial, podendo a CONTRATADA valer-se da via executiva
+                para cobrar quaisquer valores dele resultantes.
+              </p>
+              <p>
+                10.8. Para dirimir eventuais dúvidas oriundas deste contrato, as
+                partes elegem o Foro da Comarca de Ipatinga/MG, com renúncia
+                expressa a qualquer outro, por mais privilegiado que seja.
+              </p>
+              <p>
+                10.9. A CONTRATADA não será responsável pelo suporte a software
+                de terceiros (Software próprio ou de gerenciamento) utilizado
+                pela CONTRATANTE em seu ambiente de rede ou website.
+              </p>
+              <p>
+                10.10. O conjunto de serviços objeto deste contrato será
+                executado exclusivamente pela CONTRATADA, não se
+                responsabilizando esta pelas consequências advindas da
+                intervenção de outros prestadores de serviço no ambiente de rede
+                da CONTRATANTE sem consulta prévia à CONTRATADA.
+              </p>
+              <p>
+                10.11. Não se encontra incluso na prestação de serviços e/ou
+                assistência técnica deste: instalações de equipamentos,
+                estruturações e reestruturações de rede.
+              </p>
+              <p>
+                10.12. A infração de qualquer das cláusulas ou condições
+                ajustadas no presente instrumento resultará para a parte
+                infratora no pagamento de multa fixada em vinte por cento (20%)
+                sobre o valor anual do contrato, ressalvado à parte inocente o
+                direito de rescindi-lo, bastando para isso simples comunicação,
+                por escrito, respondendo, ainda, a parte infratora por eventuais
+                perdas e danos a que der causa. E por estarem assim justas e
+                contratadas, as partes assinam o presente contrato em 02 (duas)
+                vias de igual teor, forma e efeitos, substituindo quaisquer
+                acordos anteriores, naquilo em que os alterar, completar ou
+                suprimir, perante 02 (duas) testemunhas. Ipatinga,
+                <span class="sigesis-negrito sigesis-data">XX/XX/20XX</span>.
+              </p>
+            </div>
+            <div class="sigesis-assinatura">
+              <div class="sigesis-campos-assinatura">
+                <span>___________________________________</span>
+                <span>ROSEMAR S. SOUZA</span>
+                <span>___________________________________</span>
+                <span class="sigesis-negrito">1º Testemunha</span>
+                <span>___________________________________</span>
+                <span>Nome:</span>
+                <span>___________________________________</span>
+                <span>CPF:</span>
+              </div>
+              <div class="sigesis-campos-assinatura">
+                <span>___________________________________</span>
+                <span
+                  class="sigesis-representante-class sigesis-representante-assinatura"
+                  >XXXXXXXXXXXXXXX</span
+                >
+                <span>___________________________________</span>
+                <span class="sigesis-negrito">2º Testemunha</span>
                 <span>___________________________________</span>
                 <span>Nome:</span>
                 <span>___________________________________</span>
@@ -653,17 +1247,18 @@
           </div>
         </div>
       </div>
+
       <img
-        src="img/header.jpeg"
+        src="/gerador-contrato/wp-content/plugins/contrato-pdf/img/header.png"
         alt="logo"
-        id="headerSigesis"
-        style="display: none"
+        id="sigesis-headerSigesis"
+        style="display: none;"
       />
       <img
-        src="img/footer.jpeg"
+        src="/gerador-contrato/wp-content/plugins/contrato-pdf/img/footer.png"
         alt="logo"
-        id="footerSigesis"
-        style="display: none"
+        id="sigesis-footerSigesis"
+        style="display: none;"
       />
     </div>
   </body>
